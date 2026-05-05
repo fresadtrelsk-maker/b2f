@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Project Pro</title>
+
+<style>
+body{
+margin:0;
+font-family:Segoe UI;
+background:radial-gradient(circle at top,#0f172a,#020617);
+color:white;
+}
+
+/* TOP NAV */
+.menu{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+padding:15px;
+justify-content:center;
+background:rgba(15,23,42,0.95);
+backdrop-filter:blur(12px);
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.menu button{
+padding:10px 18px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.15);
+background:rgba(255,255,255,0.05);
+color:white;
+cursor:pointer;
+transition:.3s;
+font-size:14px;
+}
+
+.menu button:hover{
+background:#38bdf8;
+color:black;
+transform:scale(1.05);
+}
+
+/* SECTIONS */
+.section{
+display:none;
+padding:30px;
+animation:fade .4s;
+}
+
+.active{display:block;}
+
+.box{
+background:rgba(255,255,255,0.06);
+padding:20px;
+margin:15px 0;
+border-radius:15px;
+line-height:1.9;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(10px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+/* FOOTER */
+.footer{
+margin-top:40px;
+padding:20px;
+text-align:center;
+background:rgba(255,255,255,0.04);
+border-top:1px solid rgba(255,255,255,0.1);
+line-height:2;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<div class="menu">
+<button onclick="openSection('about')">📘 About English</button>
+<button onclick="openSection('intro')">📖 Intro</button>
+<button onclick="openSection('verbs')">⚡ Verbs</button>
+<button onclick="openSection('reading')">📚 Reading</button>
+<button onclick="openSection('grammar')">✏ Grammar</button>
+</div>
+
+<!-- ABOUT ENGLISH -->
+<div id="about" class="section active">
+<div class="box">
+<strong>About English Subject</strong><br><br>
+
+English is one of the most important and widely spoken languages in the world. It is used as a global communication tool between countries, schools, companies, and technology systems.  
+
+Learning English helps students develop speaking, listening, reading, and writing skills that are essential for education and future careers.  
+
+English also plays a big role in science, engineering, medicine, and the internet. Most global information is written in English, which makes it very important for knowledge and research.  
+
+Studying English improves confidence, communication skills, and the ability to understand different cultures around the world.  
+
+It is not just a subject in school, but a key skill for life, success, and global connection.
+</div>
+</div>
+
+<!-- INTRO (UPDATED) -->
+<div id="intro" class="section">
+<div class="box">
+
+<strong>تعريف المشروع</strong><br><br>
+
+هذا المشروع هو موقع تعليمي لمادة اللغة الإنجليزية، تم تصميمه ليكون وسيلة سهلة وممتعة لشرح أساسيات اللغة الإنجليزية للطلاب.  
+
+يحتوي الموقع على عدة أقسام مهمة مثل:
+- الأفعال (Verbs)
+- القراءة (Reading)
+- القواعد (Grammar)
+- تعريف مادة اللغة الإنجليزية
+
+هدف هذا المشروع هو مساعدة الطلاب على فهم اللغة الإنجليزية بطريقة منظمة وبسيطة، مع عرض المعلومات بشكل تفاعلي وسهل الاستخدام داخل المتصفح.
+
+كما يساعد الموقع على تحسين مهارات القراءة والفهم والاستيعاب من خلال نصوص تعليمية مرتبة وواضحة، مما يجعل عملية التعلم أكثر متعة وفعالية.
+
+<br><br>
+
+<strong>تم صنع الموقع من قبل dev b2f</strong>
+
+</div>
+</div>
+
+<!-- VERBS -->
+<div id="verbs" class="section">
+<div class="box">
+Go → Went → Gone  <br>
+See → Saw → Seen  <br>
+Eat → Ate → Eaten  <br>
+Write → Wrote → Written  <br>
+Take → Took → Taken  <br>
+Make → Made → Made  <br>
+Do → Did → Done  <br>
+Have → Had → Had  <br>
+Be → Was/Were → Been  <br>
+Speak → Spoke → Spoken  <br>
+Read → Read → Read  <br>
+Run → Ran → Run  <br>
+Buy → Bought → Bought  <br>
+Come → Came → Come  <br>
+Give → Gave → Given  <br>
+</div>
+</div>
+
+<!-- READING -->
+<div id="reading" class="section">
+<div class="box">
+Reading is one of the most powerful skills in learning English. It helps students understand vocabulary, grammar, sentence structure, and communication patterns.
+</div>
+
+<div class="box">
+Books contain knowledge from history, science, culture, and real-life experiences. Reading regularly improves imagination, creativity, and critical thinking.
+</div>
+
+<div class="box">
+Technology has changed reading completely. Students now use e-books, websites, AI tools, and mobile apps to learn faster and easier than before.
+</div>
+
+<div class="box">
+However, reading printed books is still important because it improves focus, memory, and deep understanding without distractions.
+</div>
+
+<div class="box">
+Daily reading improves vocabulary, grammar, writing, speaking, and confidence.
+</div>
+
+<div class="box">
+In conclusion, reading is a lifelong skill that builds knowledge and communication ability.
+</div>
+</div>
+
+<!-- GRAMMAR -->
+<div id="grammar" class="section">
+<div class="box">
+Grammar is the structure of language. It helps us form correct sentences and communicate clearly.
+</div>
+
+<div class="box">
+Present: I go / She goes <br>
+Past: I went / She went <br>
+Future: I will go / She will go
+</div>
+
+<div class="box">
+Rules:
+- Subject + Verb  
+- Capital letter start  
+- Full stop end  
+- Correct tense usage  
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<strong>Teacher:</strong> إيهاب يحيى <br>
+<strong>School:</strong> دار العلوم الأهلية <br><br>
+
+<strong>Students:</strong><br>
+فارس الدهمش - بدر التويجري - ناصر الفوزان - منصور السليمان
+</div>
+
+<script>
+function openSection(id){
+document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
